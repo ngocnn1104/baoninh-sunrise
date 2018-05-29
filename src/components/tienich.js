@@ -61,7 +61,7 @@ export default class TienIch extends Component {
         </Col>
 
         <Col md={8} style={{padding: '0'}}>
-           <iframe src="http://vrplus.vn/vr/" width='100%' height='500px' frameBorder={'0'}></iframe>
+           <iframe src="http://vrplus.vn/vr/" width='100%' height='500px' frameBorder={'0'} title="VR Tour"></iframe>
         </Col>
       </Row>
     );
