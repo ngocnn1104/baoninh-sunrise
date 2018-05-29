@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Upright|Playfair+Display+SC');
+
+#body {
+ margin-bottom: 50px;
+ font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+
+}
+
+div.col-xs-2, div.col-xs-3 {
+  padding: 5px;
+}
+
+p.navbar-text {
+  cursor: pointer;
+}
+
+#cover {
+  background-image: url('./img/cover.jpeg');
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+}
+
+#cover h1, #cover h2 {
+  color: white;
+}
+
+#cover h1 {
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 50px;
+  font-family: 'Playfair Display SC', serif;
+}
+
+#cover h2 {
+  font-style: italic;
+  font-family: 'Cormorant Upright', serif;
+}
+
+#cover p {
+  font-size: 14px;
+}
+
+#san-pham p {
+  font-size: 20px;
+  font-family: 'Playfair Display SC', serif;
+}
+
+#thong-tin-du-an {
+  height: 300px;
+  background-color: rgba(255,255,255,0.5);
+  padding: 10px 20px;
+  margin-top: 50px;
+}
+
+#thong-tin-du-an div {
+  height: 80%;
+  overflow: auto;
+}
+
+.anh-san-pham {
+  width: 100%;
+  height: auto;
+  transition: transform .2s;
+}
+
+.container-san-pham {
+  padding: 0;
+  overflow: hidden;
+}
+
+.on-hover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(255,255,255,0.7);
+  visibility: hidden;
+}
+
+.container-san-pham:hover .anh-san-pham {
+  transform: scale(1.2);
+  overflow: hidden;
+}
+
+.container-san-pham:hover .on-hover {
+  visibility: visible;
+}
+
+.on-hover p {
+  text-align: center;
+  margin-top: 30%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.map-container {
+  padding: 0;
+}
+
+#dac-diem-vi-tri {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#dac-diem-vi-tri p {
+  margin-top: 20px;
+}
+
+#vi-tri-text {
+  padding: 0 30px;
+}
+
+#vi-tri h2, #tien-ich h2 {
+  margin-top: 30px;
+  font-family: 'Playfair Display SC', serif;
+
+}
+
+#vi-tri h3 {
+  margin-bottom: 30px;
+}
+
+#mat-bang {
+  height: 500px;
+  background-image: url('./img/matbang.jpeg');
+  background-size: cover;
+  padding-top: 100px;
+  margin-top: 30px;
+}
+
+#mat-bang h2 {
+  font-family: 'Playfair Display SC', serif;
+}
+
+#mat-bang a {
+  font-size: 12px;
+}
+
+#matbang-text {
+  text-align: right;
+  padding-right: 80px;
+  padding-bottom: 10px;
+  background: linear-gradient(to right, rgba(255,255,255,0), white);
+}
+
+#tien-ich p {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#tienich-text {
+  padding: 0 30px;
+}
+
+.carousel-indicators {
+  bottom: 0;
+}
+
+div.carousel-inner {
+  padding-bottom: 30px;
+}
+
+.carousel-indicators li {
+  background-color: black;
+  border: none;
+}
+
+.carousel-indicators .active {
+  background-color: gray;
+}
+
+#vr-tour {
+  height: 500px;
+  background-image: url('./img/vrtour.png');
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+#vr-tour h2 {
+  margin-top: 0;
+  font-family: 'Playfair Display SC', serif;
+}
+
+#vr-tour div {
+  background: linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255,0.7), rgba(255,255,255,0));
+  height: 100%;
+  padding-top: 12%;
+}
+
+#globe {
+  color: black;
+  margin-top: 20px;
+}
+
+#globe:hover {
+  cursor: pointer;
+  color: #335190;
+}
+
+#tin-tuc {
+  padding: 30px 0;
+}
+
+#tin-tuc h2, .subheading-tintuc {
+  text-align: center;
+}
+
+#tin-tuc h2 {
+  font-family: 'Playfair Display SC', serif;
+}
+
+#tin-tuc h3 {
+  font-size: 16px;
+}
+
+#tin-tuc p {
+  font-size: 12px;
+}
+
+#thu-vien img {
+  margin: 0 auto;
+}
+
+#thu-vien h2, #thu-vien p{
+  padding-left: 20px;
+}
+
+#thu-vien h2, #lien-he h2 {
+  font-family: 'Playfair Display SC', serif;
+}
+
+#thu-vien {
+  background: rgba(62,120,188,0.3);
+  padding: 50px 0;
+}
+
+#lien-he {
+  background-image: url('./img/lienhe.jpeg');
+  background-position: right;
+  background-size: cover;
+  height: 600px;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  color: white;
+}
+
+#lien-he-content {
+  background: rgba(0,0,0,0.5);
+  border-radius: 2%;
+  padding: 10px 20px;
+}
+
+#lien-he .form-group p {
+  margin-bottom: 20px;
+}
+
+#lien-he input {
+  margin-bottom: 20px;
+}
+
+#lien-he button {
+  margin-top: 20px;
+  background: #f3ce16;
+}
+
+#main-footer {
+  background: #3E78BC;
+  padding: 30px 20px;
+  color: white;
+}
+
+#main-footer a {
+  color: white;
+}
+
+.table-responsive {
+  border: none;
+}
+
+#modal-box {
+  color: black;
+}
+
+@media screen and (max-width: 990px) {
+  #thu-vien h2, #thu-vien p {
+    text-align: center;
+  }
+
+  #lien-he {
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #san-pham p {
+    font-size: 15px;
+  }
+
+  #thong-tin-du-an {
+    height: 200px;
+  }
+
+  #thong-tin-du-an div {
+    height: 50%;
+  }
+}
