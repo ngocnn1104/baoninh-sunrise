@@ -13,7 +13,7 @@ export default class TinTuc extends Component {
         <h2>TIN TỨC</h2>
         <p className='subheading-tintuc'><a href='#' target='_blank'>Xem tất cả tin tức</a></p>
         <Row>
-          <Col xs={3}>
+          <Col md={3} xs={6}>
             <Thumbnail src={house1}>
               <h3>Thumbnail label</h3>
               <p>Ngày đăng: 28/05/2018</p>
@@ -22,7 +22,7 @@ export default class TinTuc extends Component {
               </p>
             </Thumbnail>
           </Col>
-          <Col xs={3}>
+          <Col md={3} xs={6}>
             <Thumbnail src={house2} alt="242x200">
               <h3>Thumbnail label</h3>
               <p>Ngày đăng: 28/05/2018</p>
@@ -31,7 +31,7 @@ export default class TinTuc extends Component {
               </p>
             </Thumbnail>
           </Col>
-          <Col xs={3}>
+          <Col md={3} xs={6}>
             <Thumbnail src={house3} alt="242x200">
               <h3>Thumbnail label</h3>
               <p>Ngày đăng: 28/05/2018</p>
@@ -40,7 +40,7 @@ export default class TinTuc extends Component {
               </p>
             </Thumbnail>
           </Col>
-          <Col xs={3}>
+          <Col md={3} xs={6}>
             <Thumbnail src={house3} alt="242x200">
               <h3>Thumbnail label</h3>
               <p>Ngày đăng: 28/05/2018</p>
