@@ -1,33 +1,47 @@
 import React, { Component } from 'react';
-import {Navbar, Image} from 'react-bootstrap';
+import {Navbar, Image, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
 import logo from '../img/logo.png';
 
 export default class NavBar extends Component {
   render() {
     return(
-      <Navbar fixedBottom collapseOnSelect>
+      <Navbar inverse collapseOnSelect fluid fixedTop id='navbar'>
         <Navbar.Header>
           <Navbar.Brand>
-            <Navbar.Link href='#'>Logo</Navbar.Link>
+            <a href="#"><Image src={logo} alt='logo'/></a>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
-          <Navbar.Text><Navbar.Link href='#'>Trang chủ</Navbar.Link></Navbar.Text>
-          <Navbar.Text><Navbar.Link href='#san-pham'>Sản phẩm</Navbar.Link></Navbar.Text>
-          <Navbar.Text><Navbar.Link href='#vi-tri'>Vị trí</Navbar.Link></Navbar.Text>
-          <Navbar.Text><Navbar.Link href='#mat-bang'>Mặt bằng</Navbar.Link></Navbar.Text>
-          <Navbar.Text><Navbar.Link href='#tien-ich'>Tiện ích</Navbar.Link></Navbar.Text>
-          <Navbar.Text><Navbar.Link href='#vr-tour'>VR Tour</Navbar.Link></Navbar.Text>
-          <Navbar.Text><Navbar.Link href='#tin-tuc'>Tin tức</Navbar.Link></Navbar.Text>
-          <Navbar.Text><Navbar.Link href='#thu-vien'>Thư viện</Navbar.Link></Navbar.Text>
-          <Navbar.Text><Navbar.Link href='#'>Tiến độ</Navbar.Link></Navbar.Text>
-          <Navbar.Text><Navbar.Link href='#lien-he'>Liên hệ</Navbar.Link></Navbar.Text>
-          <Navbar.Text>
-            <Navbar.Link href='#'><i class="fab fa-facebook-square fa-2x"></i></Navbar.Link>{' '}
-            <Navbar.Link href='#'><i class="fab fa-youtube fa-2x"></i></Navbar.Link>{' '}
-            <Navbar.Link href='#'><i class="fas fa-phone-square fa-2x"></i></Navbar.Link>
-          </Navbar.Text>
+          <Nav>
+            <NavItem eventKey={1} href="#" className='bold'>
+              TRANG CHỦ
+            </NavItem>
+            <NavDropdown eventKey={2} title="VỀ DỰ ÁN" id="basic-nav-dropdown" className='bold'>
+              <MenuItem eventKey={2.1} href='#thong-tin'>Thông tin dự án</MenuItem>
+              <MenuItem eventKey={2.2} href='#video'>Toàn cảnh dự án</MenuItem>
+              <MenuItem eventKey={2.3} href='#vi-tri'>Vị trí</MenuItem>
+              <MenuItem eventKey={2.3} href='#mat-bang'>Mặt bằng</MenuItem>
+              <MenuItem eventKey={2.3} href='#tien-ich'>Tiện ích</MenuItem>
+            </NavDropdown>
+            <NavItem eventKey={3} href="#thu-vien" className='bold'>
+              THƯ VIỆN
+            </NavItem>
+            <NavItem eventKey={4} href="#vr-tour" className='bold'>
+              VR TOUR
+            </NavItem>
+            <NavItem eventKey={5} href="#tin-tuc" className='bold'>
+              TIN TỨC
+            </NavItem>
+            <NavItem eventKey={6} href="#lien-he" className='bold'>
+              LIÊN HỆ
+            </NavItem>
+          </Nav>
+
+          <Nav pullRight>
+            <NavItem eventKey={1} href='#'><i class="fab fa-facebook-square fa-2x"></i></NavItem>
+            <NavItem eventKey={2} href='#'><i class="fab fa-youtube fa-2x"></i></NavItem>
+          </Nav>
         </Navbar.Collapse>
       </Navbar>
     );

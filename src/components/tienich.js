@@ -1,67 +1,63 @@
 import React, { Component } from 'react';
-import {Row, Col, Carousel, Table} from 'react-bootstrap';
-
-const utilities = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen'];
-let table1=[]; let table2=[]; let table3=[];
-for (let i=1; i < 4; i++) {
-  table1.push(<tr>
-                <td>{i}</td>
-                <td>{utilities[i-1]}</td>
-                <td>{i+1}</td>
-                <td>{utilities[i]}</td>
-              </tr>);
-  i++;
-}
-
-for (let i=5; i < 8; i++) {
-  table2.push(<tr>
-                <td>{i}</td>
-                <td>{utilities[i-1]}</td>
-                <td>{i+1}</td>
-                <td>{utilities[i]}</td>
-              </tr>);
-  i++;
-}
-
-for (let i=9; i < 12; i++) {
-  table3.push(<tr>
-                <td>{i}</td>
-                <td>{utilities[i-1]}</td>
-                <td>{i+1}</td>
-                <td>{utilities[i]}</td>
-              </tr>);
-  i++;
-}
+import {Row, Col, Table, Image} from 'react-bootstrap';
+import photo from '../img/tienich.png';
 
 export default class TienIch extends Component {
   render() {
     return(
       <Row id='tien-ich'>
-        <Col md={4} id='tienich-text'>
-          <h2>TIỆN ÍCH</h2>
-          <p>Lorem ipsum dolor sit amet, sed eu graece senserit, nulla detraxit indoctum per ad. Autem omnium timeam vis ei. Cu partem placerat pri, corpora euripidis no eam. Harum luptatum usu ut, veri inermis scribentur mel ei. Aperiam albucius perfecto est et, ornatus voluptatum sed in, ad veri volumus dolores pri. Quando delicata cum ad, vis prompta periculis consetetur ei. Ex mel fugit laudem posidonium.</p>
+        <Col md={6} id='tienich-text'>
+          <h2>TIỆN ÍCH ĐẲNG CẤP - PHONG CÁCH THƯỢNG LƯU</h2>
+          <p>Không chỉ là một nơi để sống, mà Bảo Ninh Sunrise đã hình thành một cách sống, kiến tạo một khu sinh thái chuẩn phong cách thương lưu với hệ thống tiện ích đẳng cấp, chuẩn 5 sao từ Sun Spa Resort.</p>
 
-          <Carousel controls={false}>
-            <Carousel.Item>
-              <Table responsive>
-                {table1}
-              </Table>
-            </Carousel.Item>
-            <Carousel.Item>
-            <Table responsive>
-              {table2}
-            </Table>
-            </Carousel.Item>
-            <Carousel.Item>
-            <Table responsive>
-              {table3}
-            </Table>
-            </Carousel.Item>
-          </Carousel>
+          <Row className='icon-tien-ich'>
+            <Col xs={4}>
+              <p><i class="fas fa-shopping-bag fa-2x"></i></p>
+              <p>Trung tâm thương mại</p>
+            </Col>
+            <Col xs={4}>
+              <p><i class="fas fa-ship fa-2x"></i></p>
+              <p>Cầu cảng - bến du thuyền</p>
+            </Col>
+            <Col xs={4}>
+              <p><i class="fas fa-utensils fa-2x"></i></p>
+              <p>Nhà hàng</p>
+            </Col>
+          </Row>
+
+          <Row className='icon-tien-ich'>
+            <Col xs={4}>
+              <p><i class="fas fa-leaf fa-2x"></i></p>
+              <p>Spa</p>
+            </Col>
+            <Col xs={4}>
+              <p><i class="fas fa-dumbbell fa-2x"></i></p>
+              <p>Gym</p>
+            </Col>
+            <Col xs={4}>
+              <p><i class="fas fa-life-ring fa-2x"></i></p>
+              <p>Bể bơi</p>
+            </Col>
+          </Row>
+
+          <Row className='icon-tien-ich'>
+            <Col xs={4}>
+              <p><i class="fas fa-users fa-2x"></i></p>
+              <p>Khu teambuilding</p>
+            </Col>
+            <Col xs={4}>
+              <p><i class="fas fa-volleyball-ball fa-2x"></i></p>
+              <p>Khu vui chơi trên biển</p>
+            </Col>
+            <Col xs={4}>
+              <p><i class="fas fa-tree fa-2x"></i></p>
+              <p>Khu công viên cây xanh</p>
+            </Col>
+          </Row>
         </Col>
 
-        <Col md={8} style={{padding: '0'}}>
-           <iframe src="http://vrplus.vn/vr/" width='100%' height='500px' frameBorder={'0'} title="VR Tour"></iframe>
+        <Col md={6}>
+          <Image src={photo} alt='tien ich'/>
         </Col>
       </Row>
     );

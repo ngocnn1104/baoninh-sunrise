@@ -65,11 +65,11 @@ export default class LienHe extends Component {
           <ModalBox onClick={this.handleClickModalBox} body={modalBody} header={modalHeader} />
         }
 
-        <Col md={6} id='lien-he-content'>
-          <h2>LIÊN HỆ</h2>
+        <Col xsOffset={1} md={4} xs={10} id='lien-he-content'>
+          <h2>THÔNG TIN LIÊN HỆ</h2>
 
           <FormGroup controlId='lien-he'>
-            <p>Hãy để chúng tôi giúp bạn có được sự lựa chọn tốt nhất tại Bảo Ninh Sunrise. Vui lòng nhập thông tin bên dưới, chúng tôi sẽ liên lạc với bạn trong thời gian sớm nhất.</p>
+            <p>Hãy nói chúng tôi biết yêu cầu của bạn, chính tôi sẽ giúp bạn có được sự lựa chọn tốt nhất tại Bảo Ninh Sunrise.</p>
 
             <Row>
               <Col md={6}>

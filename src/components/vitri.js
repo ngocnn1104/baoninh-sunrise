@@ -1,40 +1,49 @@
 import React, { Component } from 'react';
-import {Row, Col} from 'react-bootstrap';
+import {Row, Col, Image} from 'react-bootstrap';
+import photo from '../img/vitri.png';
 
 export default class ViTri extends Component {
   render() {
     return(
       <Row id='vi-tri'>
-        <Col md={4} className='map-container'>
-          <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=danang&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        <Col md={8} className='map-container'>
+          <Image src={photo} alt='vi tri' />
         </Col>
 
-        <Col md={8} id='vi-tri-text'>
-          <h2>VỊ TRÍ VÀNG</h2>
-          <h3>Subheading</h3>
-          <p>Lorem ipsum dolor sit amet, sed eu graece senserit, nulla detraxit indoctum per ad. Autem omnium timeam vis ei. Cu partem placerat pri, corpora euripidis no eam. Harum luptatum usu ut, veri inermis scribentur mel ei. Aperiam albucius perfecto est et, ornatus voluptatum sed in, ad veri volumus dolores pri. Quando delicata cum ad, vis prompta periculis consetetur ei. Ex mel fugit laudem posidonium.</p>
+        <Col md={4} id='vi-tri-text'>
+          <h2>VỊ TRÍ VÀNG - NGÀN LỢI THẾ</h2>
+          <h3>Tại bán đảo Bảo Ninh - TP. Đồng Hới</h3>
+          <p>Nằm trong quần thể Khu du lịch sinh thái Sun Spa Resort tiêu chuẩn 5 sao, Bảo Ninh Sunrise sở hữu vị trí đắc địa View sông - hướng biển với liên kết vùng hoàn hảo, dễ dàng kết nối đến các khu vực khác trong thành phố.</p>
 
-          <Row id='dac-diem-vi-tri'>
-            <Col md={3} xs={6}>
-              <i class="fab fa-accessible-icon fa-5x"></i>
-              <p>Accessible</p>
-            </Col>
+          <div id='dac-diem-vi-tri'>
+            <Row>
+              <Col xs={6}>
+                <i className="fas fa-building fa-3x icon"></i>
+                <p className='time bold'>5 phút</p>
+                <p className='place'>Trung tâm Thành phố</p>
+              </Col>
 
-            <Col md={3} xs={6}>
-              <i class="fas fa-plane fa-5x"></i>
-              <p>Close to airport</p>
-            </Col>
+              <Col xs={6}>
+                <i className="fas fa-train fa-3x icon"></i>
+                <p className='time bold'>10 phút</p>
+                <p className='place'>Ga Đồng Hới</p>
+              </Col>
+            </Row>
 
-            <Col md={3} xs={6}>
-              <i class="fas fa-tree fa-5x"></i>
-              <p>Nature-friendly</p>
-            </Col>
+            <Row>
+              <Col xs={6}>
+                <i className="fas fa-bus fa-3x icon"></i>
+                <p className='time bold'>5 phút</p>
+                <p className='place'>Bến xe Đồng Hới 1km</p>
+              </Col>
 
-            <Col md={3} xs={6}>
-              <i class="fas fa-hospital fa-5x"></i>
-              <p>Medical facilities</p>
-            </Col>
-          </Row>
+              <Col xs={6}>
+                <i className="fas fa-plane fa-3x icon"></i>
+                <p className='time bold'>15 phút</p>
+                <p className='place'>Sân bay Đồng hới 7km</p>
+              </Col>
+            </Row>
+          </div>
         </Col>
       </Row>
     );
